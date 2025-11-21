@@ -1,0 +1,64 @@
+playlists
+{
+    Gamemodes
+    {
+        surf
+		{
+			inherit defaults
+			vars
+			{
+				name "#GAMEMODE_SURF"
+				lobbytitle "SURF_NAME_LOBBY"
+				description "#SURF_DESC"
+				hint "#SURF_DESC"
+				abbreviation "Surf"
+
+				max_players 16
+				max_teams 1
+				classic_mp 1
+				scorelimit 100
+				timelimit 100
+				roundtimelimit 30
+				roundscorelimit 5
+
+				gamemode_score_hint #GAMEMODE_SCORE_HINT_TDM
+			}
+		}
+    }
+    Playlists
+    {
+        surf
+		{
+			inherit defaults
+			vars
+			{
+				name "#GAMEMODE_SURF"
+				lobbytitle "#SURF_NAME_LOBBY"
+				description "#SURF_DESC"
+				hint "#SURF_DESC"
+				abbreviation "Surf"
+				image ffa
+				max_players 16
+				max_teams 1
+				classic_mp 1
+				scorelimit 5
+				roundtimelimit 30
+				roundscorelimit 5
+
+				gamemode_score_hint #GAMEMODE_SCORE_HINT_SURF
+				gamemode_bullet_001	#GAMEMODE_BULLET_PK_001
+				gamemode_bullet_002	#GAMEMODE_BULLET_PK_002
+			}
+			gamemodes
+			{
+				surf
+				{
+					maps
+					{
+						mp_complex_surf 1
+					}
+				}
+			}
+		}
+    }
+}
