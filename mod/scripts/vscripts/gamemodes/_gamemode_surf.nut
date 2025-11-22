@@ -4,8 +4,6 @@ global function _SURF_Init
 
 global function SURF_OnPlayerConnected
 
-global function SURF_DestroyCallback
-
 void function _SURF_Init() {
     //print("**********************SURF INITS *******************************")
 	ClassicMP_SetCustomIntro( ClassicMP_DefaultNoIntro_Setup, 10 )
