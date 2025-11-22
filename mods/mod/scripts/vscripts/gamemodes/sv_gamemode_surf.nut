@@ -35,4 +35,6 @@ void function SURFRegisterNetworkVars()
 {
 	if ( GAMETYPE != GAMEMODE_SURF )
 		return
+
+     Remote_RegisterFunction("Client_EnableWallrun")
 }

@@ -1,7 +1,7 @@
 {
 	"Name" : "Berdox.surf_gamemode",
 	"Description": "Adds Surf Game Mode",
-	"Version": "1.0.2",
+	"Version": "1.1.0",
 	"LoadPriority": 1,
 	"RequiredOnClient": false,
 	
@@ -18,7 +18,17 @@
         },
 		{
             "Path": "gamemodes/_gamemode_surf.nut",
-            "RunOn": "SERVER && MP"
+            "RunOn": "SERVER && MP",
+		 "ServerCallback": {
+        		"Destroy": "SURF_DestroyCallback"
+    		}
+        },
+		{
+            "Path": "sv_not_surf.nut",
+            "RunOn": "SERVER && MP",
+		 "ServerCallback": {
+        		"After": "Check_Map_For_Surf"
+    		}
         }
 	],
 	"Localisation": [
