@@ -1,7 +1,7 @@
 {
 	"Name" : "Berdox.surf_gamemode",
 	"Description": "Adds Surf Game Mode",
-	"Version": "1.1.1",
+	"Version": "1.1.2",
 	"LoadPriority": 1,
 	"RequiredOnClient": true,
 	
